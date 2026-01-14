@@ -47,7 +47,8 @@
 /* ======Navbar style======== */
 .navber, 
 .banner-area, 
-.features-container{
+.features-container,
+.card-container{
     justify-content: space-between;
     align-items: center;
     padding-top: 10px;
@@ -132,6 +133,51 @@
     width: 100%;
 }
 
+/* ==========Cart section style============= */
+.card-container{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.card-heading{
+    max-width: 576px;
+    margin-bottom: 40px;
+}
+.card-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.card-heading p{
+    font-size: 1rem;
+    color: #727272;
+    line-height: 30px;
+}
+
+.card-items{
+    justify-content: space-around;
+    align-items: center;
+}
+.card-items .card{
+    border: 1px solid #FF900E;
+    border-radius: 5px;
+    padding: 35px 45px;
+    text-align: center;
+    width: 100%;
+}
+.card h4{
+    font-size: 2.8rem;
+    font-weight: 500;
+    color: #424242;
+}
+.card p{
+    font-size: 1rem;
+    color: #727272;
+}
+.card img{
+    width: 100%;
+}
+
+
 /* =========Header area responsive design========== */
 @media screen and (max-width:576px)
 {
@@ -166,5 +212,16 @@
     }
     .feature-team{
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* ===========Card area responsive design============= */
+
+    .card-items{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .card-heading{
+        text-align: center;
+        padding: 0 5px;
     }
 }
