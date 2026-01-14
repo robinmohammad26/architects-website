@@ -45,7 +45,9 @@
 }
 
 /* ======Navbar style======== */
-.navber, .banner-area{
+.navber, 
+.banner-area, 
+.features-container{
     justify-content: space-between;
     align-items: center;
     padding-top: 10px;
@@ -95,9 +97,45 @@
     margin: 0 auto;
 }
 
+/* ========Features Section style============= */
+.features-container{
+    justify-content: center !important;
+    gap: 100px;
+    margin: 50px auto;
+}
+.feature-cont{
+    max-width: 680px;
+}
+.feature-cont h3{
+    font-size: 2.8rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.feature-cont h3 > span{
+    color: #FF900E;
+    font-weight: 700;
+}
+
+.feature-cont p{
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* =======feature team section=========== */
+
+.feature-team{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.feature-team img{
+    width: 100%;
+}
+
 /* =========Header area responsive design========== */
 @media screen and (max-width:576px)
 {
+    /* =========Navbar and banner responsive========== */
     .navber, .nav-links{
         flex-direction: column;
         gap: 15px;
@@ -111,5 +149,22 @@
     }
     .brand-text{
         padding: 5px;
+    }
+
+    /* ==========Features section responsive ================= */
+
+    .features-container{
+        flex-direction: column;
+        gap: 25px;
+    }
+    .feature-cont{
+        text-align: center;
+        padding: 0 5px;
+    }
+    .feature-cont h3{
+        font-size: 2rem;
+    }
+    .feature-team{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
