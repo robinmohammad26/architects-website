@@ -48,7 +48,8 @@
 .navber, 
 .banner-area, 
 .features-container,
-.card-container{
+.card-container,
+.sponsors-area{
     justify-content: space-between;
     align-items: center;
     padding-top: 10px;
@@ -177,6 +178,36 @@
     width: 100%;
 }
 
+/* ==========Sponsor Area style================ */
+.sponsors-area{
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+.sponsor-content{
+    text-align: center;
+    max-width: 576px;
+    margin: 0 auto;
+}
+.sponsor-content h3{
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.sponsor-content p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #727272;
+    margin-bottom: 40px;
+    line-height: 30px;
+}
+
+.sponsors{
+    justify-content: space-between;
+}
+.sponsors img{
+    filter: grayscale(100%);
+}
+
 
 /* =========Header area responsive design========== */
 @media screen and (max-width:576px)
@@ -223,5 +254,14 @@
     .card-heading{
         text-align: center;
         padding: 0 5px;
+    }
+
+    /* =================Sponsors section responsive design=========== */
+    .sponsors{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .sponsors img{
+        width: 100%;
     }
 }
